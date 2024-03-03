@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  header {
+    height: 100px;
+    background-color: #fff;
+    padding: 0 100px 0 54px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      h3 {
+        margin-left: 5px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      margin-left: 266px;
+      font-family: 'Poppins';
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 75px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          text-decoration: none;
+          // & = a
+          &:hover {
+            color: #ff6c44;
+          }
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      li {
+        margin-right: 45px;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  section.banner {
+    background-image: url('../../assest/banner-home.png');
+    height: 717px;
+    position: relative;
+    .content {
+      width: 643px;
+      height: 443px;
+      border-radius: 10px;
+      background: #fff3e3;
+      position: absolute;
+      top: 157px;
+      right: 58px;
+      // padding: 62px 43px 37px 41px;
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 62px;
+        margin-left: 41px;
+        letter-spacing: 3px;
+        height: 24px;
+        color: var(#aaa);
+      }
+      h4 {
+        width: 559px;
+        height: 127px;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 65px;
+        margin-right: 43px;
+        margin-left: 41px;
+      }
+      .nd {
+        margin-left: 41px;
+        margin-right: 56px;
+        margin-top: 17px;
+        font-size: 18px;
+        width: 546px;
+        height: 52px;
+        line-height: 24px;
+      }
+      .button {
+        width: 222px;
+        height: 74px;
+        background: var(--Primary, #b88e2f);
+        padding: 25px 72px;
+        margin-top: 46px;
+        margin-left: 39px;
+
+        h3 {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          width: 78px;
+          height: 24px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  section.first {
+    width: 1183px;
+    // height: 4835px;
+    background: #fff;
+
+    h1 {
+      width: 300px;
+      height: 48px;
+      font-size: 32px;
+      // font-style: normal;
+      font-weight: 700;
+      // line-height: normal;
+      margin-top: 56.07px;
+      margin-left: 543px;
+      margin-right: 597px;
+    }
+    h3 {
+      width: 559px;
+      height: 28.711px;
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: 449px;
+      // margin-right: 432px;
+      text-align: center;
+    }
+    .content1 {
+      margin-top: 48.3px;
+      margin-left: 131px;
+      margin-right: 131px;
+      display: flex;
+      justify-content: space-between;
+      img {
+        margin-right: 20px;
+        width: 381px;
+        height: 480px;
+        border-radius: 10px;
+      }
+    }
+    .name {
+      display: flex;
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: 600;
+      .h21 {
+        margin-left: 282px;
+        margin-right: 326px;
+        width: 79px;
+        height: 36px;
+      }
+      .h22 {
+        margin-right: 309px;
+        width: 71px;
+        height: 36px;
+      }
+      .h23 {
+        width: 112px;
+        height: 36px;
+        // margin-right: 261px;
+      }
+    }
+  }
+  section.two {
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      width: 269px;
+      height: 48px;
+      margin-top: 56px;
+      margin-left: 588px;
+      margin-bottom: 32px;
+      line-height: 48px;
+    }
+    .Products {
+      max-width: 1236px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+
+      .content2 {
+        background: var(--Color-Light-BG, #f4f5f7);
+        .a1 {
+          height: 301px;
+          position: relative;
+          i {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+          }
+          p {
+            position: absolute;
+            top: 36px;
+            right: 25px;
+            width: 42px;
+            height: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #fff;
+          }
+        }
+      }
+      .a2 {
+        height: 129px;
+        h2 {
+          margin-top: 16px;
+          margin-left: 16px;
+          line-height: 28.8px;
+          width: 123px;
+          height: 29px;
+          font-size: 24px;
+          font-weight: 600;
+        }
+        p {
+          width: 138px;
+          height: 34px;
+          font-size: 16px;
+          font-weight: 500;
+          margin-top: 8px;
+          margin-left: 16px;
+          color: #898989;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .fix_price {
+    margin: 8px 20px 30px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .price1 {
+      width: 131px;
+      height: 30px;
+      font-size: 20px;
+      font-weight: 600;
+
+      line-height: 30px;
+    }
+    .price2 {
+      width: 102px;
+      height: 24px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration: line-through;
+      color: #898989;
+    }
+  }
+}
+.button1 {
+  margin-top: 32px;
+  input[value='Show More'] {
+    width: 89px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #b88e2f;
+  }
+  input[type='button'] {
+    width: 245px;
+    height: 48px;
+    border: 1px solid #b88e2f;
+    background: #fff;
+    margin-left: 598px;
+    margin-bottom: 81px;
+  }
+}
+footer {
+  width: 1440px;
+  height: 505px;
+  border-top: 1px solid rgba(0, 0, 0, 0.17);
+  .main_footer {
+    display: flex;
+    width: 1240px;
+    margin-left: 100px;
+
+    h4 {
+      margin-top: 48px;
+      margin-bottom: 55px;
+      color: #9f9f9f;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    li {
+      margin-bottom: 46px;
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          color: #ff6c44;
+        }
+      }
+    }
+    .infor {
+      h3 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 48px 338.01px 50px 0;
+      }
+      p {
+        margin-top: 50px;
+        color: #9f9f9f;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .links {
+      margin-right: 144px;
+      width: 68px;
+    }
+    .helps {
+      width: 140px;
+      margin-right: 72px;
+    }
+    .email {
+      width: 286px;
+      height: 101px;
+      .contact {
+        display: flex;
+        input {
+          border: none;
+        }
+        .contact1 {
+          hr {
+            margin-right: 11px;
+            margin-top: 3px;
+          }
+          input {
+            color: #9f9f9f;
+            width: 173px;
+            height: 21px;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .contact2 {
+          hr {
+            margin-top: 3px;
+          }
+          input {
+            width: 75px;
+            height: 21px;
+            color: #000;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .author {
+    hr {
+      margin: 48px 100px 35px 100px;
+    }
+    p {
+      width: 230px;
+      height: 24px;
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 102.01px;
+      margin-bottom: 38px;
+    }
+  }
+}
