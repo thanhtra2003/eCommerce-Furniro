@@ -179,40 +179,49 @@ body section.two h1 {
   margin-bottom: 32px;
   line-height: 48px;
 }
-body section.two .Products {
+body section.two .products {
   max-width: 1236px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
+  margin-top: 63px;
 }
-body section.two .Products .content2 {
-  background: var(--Color-Light-BG, #f4f5f7);
-}
-body section.two .Products .content2 .a1 {
-  height: 301px;
+body section.two .products .items_products_main {
   position: relative;
 }
-body section.two .Products .content2 .a1 i {
+body section.two .products .items_products_main .item-products {
+  background: var(--Color-Light-BG, #f4f5f7);
+}
+body section.two .products .items_products_main .item-products .image_products {
+  position: relative;
+}
+body section.two .products .items_products_main .item-products .image_products img {
+  width: 285px;
+  height: 301px;
+}
+body section.two .products .items_products_main .item-products .image_products i {
   position: absolute;
   top: 24px;
   right: 24px;
 }
-body section.two .Products .content2 .a1 p {
+body section.two .products .items_products_main .item-products .image_products p {
   position: absolute;
   top: 36px;
   right: 25px;
+  color: var(--Color-White, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
   width: 42px;
   height: 24px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #fff;
+  line-height: 150%;
 }
-body section.two .Products .a2 {
+body section.two .products .items_products_main .item-products .products_infor {
   height: 129px;
 }
-body section.two .Products .a2 h2 {
+body section.two .products .items_products_main .item-products .products_infor h2 {
   margin-top: 16px;
   margin-left: 16px;
   line-height: 28.8px;
@@ -221,7 +230,7 @@ body section.two .Products .a2 h2 {
   font-size: 24px;
   font-weight: 600;
 }
-body section.two .Products .a2 p {
+body section.two .products .items_products_main .item-products .products_infor p {
   width: 138px;
   height: 34px;
   font-size: 16px;
@@ -231,20 +240,20 @@ body section.two .Products .a2 p {
   color: #898989;
   line-height: 24px;
 }
-body .fix_price {
+body section.two .products .items_products_main .item-products .products_infor .fix_price {
   margin: 8px 20px 30px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .fix_price .price1 {
+body section.two .products .items_products_main .item-products .products_infor .fix_price .price1 {
   width: 131px;
   height: 30px;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
 }
-body .fix_price .price2 {
+body section.two .products .items_products_main .item-products .products_infor .fix_price .price2 {
   width: 102px;
   height: 24px;
   font-size: 16px;
@@ -252,6 +261,67 @@ body .fix_price .price2 {
   line-height: 24px;
   text-decoration: line-through;
   color: #898989;
+}
+body section.two .products .items_products_main .items-hover {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+body section.two .products .items_products_main .items-hover .btn_action {
+  width: 202px;
+  height: 48px;
+  background: var(--Color-White, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Primary, #b88e2f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-left: 41px;
+  margin-top: 175px;
+}
+body section.two .products .items_products_main .items-hover .btn_card {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px;
+}
+body section.two .products .items_products_main .items-hover .btn_card a {
+  color: var(--Color-White, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-top: 24px;
+  text-decoration: none;
+}
+body section.two .products .items_products_main .items-hover .btn_card a:hover {
+  text-decoration: underline;
+}
+body section.two .products .items_products_main .items-hover .btn_card i {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  margin-top: 28px;
+}
+body section.two .products .items_products_main .items-hover .btn_card .share {
+  display: flex;
+}
+body section.two .products .items_products_main .items-hover .btn_card .compare {
+  display: flex;
+}
+body section.two .products .items_products_main .items-hover .btn_card .like {
+  display: flex;
+}
+body section.two .products .items_products_main .items-hover:hover {
+  opacity: 1;
+  transition: 1s;
 }
 
 .button1 {
@@ -306,17 +376,18 @@ footer .main_footer li a {
 footer .main_footer li a:hover {
   color: #ff6c44;
 }
-footer .main_footer .infor h3 {
+footer .main_footer .infor-footer h3 {
   color: #000;
   font-size: 24px;
   font-weight: 700;
   margin: 48px 338.01px 50px 0;
 }
-footer .main_footer .infor p {
+footer .main_footer .infor-footer p {
   margin-top: 50px;
   color: #9f9f9f;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
 }
 footer .main_footer .links {
   margin-right: 144px;
@@ -373,4 +444,5 @@ footer .author p {
   font-weight: 400;
   margin-left: 102.01px;
   margin-bottom: 38px;
+  line-height: 1.5;
 }
