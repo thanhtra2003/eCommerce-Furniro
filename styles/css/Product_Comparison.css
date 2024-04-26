@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body header {
+  height: 100px;
+  background-color: #fff;
+  padding: 0 100px 0 54px;
+  display: flex;
+  align-items: center;
+}
+body header .logo {
+  display: flex;
+  align-items: center;
+}
+body header .logo h3 {
+  margin-left: 5px;
+  font-size: 34px;
+  font-weight: 700;
+}
+body header .menu {
+  display: flex;
+  align-items: center;
+  margin-left: 266px;
+  font-family: "Poppins";
+}
+body header .menu li {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 75px;
+  cursor: pointer;
+}
+body header .menu li:last-child {
+  margin-right: 0;
+}
+body header .menu li a {
+  text-decoration: none;
+}
+body header .menu li a:hover {
+  color: #ff6c44;
+}
+body header .icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+body header .icons li {
+  margin-right: 45px;
+  cursor: pointer;
+}
+body header .icons li:last-child {
+  margin-right: 0;
+}
+body .banner {
+  width: 1440px;
+  height: 316px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assest/Rectangle 1.png");
+  background-repeat: no-repeat;
+}
+body .banner .logo img {
+  margin-left: 213px;
+  width: 77px;
+  height: 77px;
+}
+body .banner h1 {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+}
+body .banner h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+body .banner .menu {
+  display: flex;
+  margin-left: 191px;
+}
+body .banner .menu i {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+body .banner .menu a {
+  text-decoration: none;
+}
+body .banner .menu a:hover {
+  color: #ff6c44;
+}
+body .product {
+  display: flex;
+  margin-bottom: 64px;
+}
+body .product .view_more {
+  margin-left: 96px;
+  margin-top: 55px;
+}
+body .product .view_more h3 {
+  margin-right: 75px;
+  width: 223px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126.5%;
+  margin-bottom: 21px;
+}
+body .product .view_more p {
+  color: #727272;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+body .product .view_more hr {
+  margin: 0;
+  margin-top: 5px;
+}
+body .product .example_product {
+  margin-right: 47px;
+  margin-top: 34px;
+}
+body .product .example_product .image_product {
+  width: 280px;
+  height: 177px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f9f1e7;
+}
+body .product .example_product .price {
+  margin-top: 18px;
+}
+body .product .example_product .price h3 {
+  width: 192px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126.5%;
+}
+body .product .example_product .price h4 {
+  color: #000;
+  margin-top: 6px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+body .product .example_product .price .evaluate {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+body .product .example_product .price .evaluate h5 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 4px;
+}
+body .product .example_product .price .evaluate span {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+body .product .example_product .price .evaluate .line2 {
+  border-right: 1px solid #9f9f9f;
+}
+body .product .example_product .price .evaluate p {
+  color: #9f9f9f;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body .product .add_product {
+  margin-top: 83px;
+  margin-left: 22px;
+}
+body .product .add_product h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%;
+  margin-bottom: 14px;
+}
+body .product .add_product .choose {
+  width: 242px;
+  height: 39px;
+  border-radius: 6px;
+  background: var(--Primary, #b88e2f);
+  display: flex;
+  gap: 42px;
+  align-items: center;
+  justify-content: center;
+}
+body .product .add_product .choose p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 126.5%;
+}
+body .line {
+  width: 1332px;
+  height: 1px;
+  background-color: #e8e8e8;
+  margin-left: 54px;
+}
+body .information {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 96px;
+}
+body .information p {
+  width: 241px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%;
+}
+body .information .dimensions {
+  border-right: 1px solid #e8e8e8;
+  margin-left: 62px;
+}
+body .information .dimensions p {
+  margin-bottom: 34px;
+}
+body .information .dimensions p:first-child {
+  margin-top: 92px;
+}
+body .information .dimensions_line {
+  margin-left: 62px;
+  margin-right: 56px;
+  border-right: 1px solid #e8e8e8;
+}
+body .information .dimensions_line p {
+  margin-bottom: 34px;
+}
+body .information .dimensions_line p:first-child {
+  margin-top: 92px;
+}
+body .information .dimensions1 {
+  margin-top: 92px;
+  margin-right: 96px;
+}
+body .information .dimensions1 .text {
+  margin-top: 170px;
+}
+body .information .general {
+  border-right: 1px solid #e8e8e8;
+  margin-right: 18px;
+}
+body .information .general .title_gene {
+  margin-top: 42px;
+  width: 175px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126.5%;
+  margin-bottom: 28px;
+}
+body .information .general p {
+  margin-bottom: 34px;
+}
+body .information .general_last {
+  border-right: 1px solid #e8e8e8;
+  margin-right: 18px;
+}
+body .information .general_last .title_gene {
+  margin-top: 42px;
+  width: 175px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 126.5%;
+  margin-bottom: 28px;
+}
+body .information .general_last .warranty_first {
+  margin: 63px 0 109px 0;
+}
+body .information .general_last .warranty_last {
+  margin: 121px 0 159px 0;
+}
+body .information .general_last p {
+  color: #000;
+  width: 241px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%;
+}
+body .information .dimensions_line_last {
+  margin-left: 62px;
+  border-right: 1px solid #e8e8e8;
+}
+body .information .dimensions_line_last .warranty_first {
+  margin: 34px 0 50px 0;
+}
+body .information .dimensions_line_last .warranty_last {
+  margin: 95px 0 35px 0;
+}
+body .information .dimensions_line_last p {
+  width: 241px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.5%;
+}
+body .information .dimensions_line_last p:first-child {
+  margin-top: 92px;
+}
+body .information .dimensions_last {
+  border-right: 1px solid #e8e8e8;
+  margin-left: 62px;
+}
+body .information .dimensions_last p:first-child {
+  margin-top: 92px;
+}
+body .information .dimensions_last .warranty_first {
+  margin: 38px 0 20px 0;
+}
+body .information .dimensions_last .warranty_last {
+  margin: 49px 0 35px 0;
+}
+body .information .dimensions1_last {
+  margin-top: 92px;
+  margin-right: 96px;
+}
+body .information .dimensions1_last .text {
+  margin-top: 165px;
+}
+body .information .add {
+  width: 215px;
+  height: 64px;
+  border: 1px solid var(--Primary, #b88e2f);
+  background: var(--Primary, #b88e2f);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 70px;
+}
+body .service {
+  width: 1440px;
+  height: 270px;
+  background: #faf3ea;
+  margin-top: 85px;
+  padding: 100px 0;
+}
+body .service .menu-service {
+  display: flex;
+  width: 1334px;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 53px;
+}
+body .service .menu-service .infor {
+  margin-left: 10px;
+}
+body .service .menu-service .infor h4 {
+  color: #242424;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 150%; /* 37.5px */
+}
+body .service .menu-service .infor p {
+  color: var(--Color-Gray-3, #898989);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+body .service .menu-service .quality {
+  display: flex;
+}
+body .service .menu-service .protect {
+  display: flex;
+}
+body .service .menu-service .ship {
+  display: flex;
+}
+body .service .menu-service .support {
+  display: flex;
+}
+body footer {
+  width: 1440px;
+  height: 505px;
+  border-top: 1px solid rgba(0, 0, 0, 0.17);
+}
+body footer .main_footer {
+  display: flex;
+  width: 1240px;
+  margin-left: 100px;
+}
+body footer .main_footer h4 {
+  margin-top: 48px;
+  margin-bottom: 55px;
+  color: #9f9f9f;
+  font-size: 16px;
+  font-weight: 500;
+}
+body footer .main_footer li {
+  margin-bottom: 46px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+body footer .main_footer li:last-child {
+  margin-bottom: 0;
+}
+body footer .main_footer li a {
+  text-decoration: none;
+}
+body footer .main_footer li a:hover {
+  color: #ff6c44;
+}
+body footer .main_footer .infor-footer h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 48px 338.01px 50px 0;
+}
+body footer .main_footer .infor-footer p {
+  margin-top: 50px;
+  color: #9f9f9f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+body footer .main_footer .links {
+  margin-right: 144px;
+  width: 68px;
+}
+body footer .main_footer .helps {
+  width: 140px;
+  margin-right: 72px;
+}
+body footer .main_footer .email {
+  width: 286px;
+  height: 101px;
+}
+body footer .main_footer .email .contact {
+  display: flex;
+}
+body footer .main_footer .email .contact input {
+  border: none;
+}
+body footer .main_footer .email .contact .contact-email hr {
+  margin-right: 11px;
+  margin-top: 3px;
+}
+body footer .main_footer .email .contact .contact-email input {
+  color: #9f9f9f;
+  width: 173px;
+  height: 21px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+body footer .main_footer .email .contact .contact-submit hr {
+  margin-top: 3px;
+}
+body footer .main_footer .email .contact .contact-submit input {
+  width: 75px;
+  height: 21px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+}
+body footer .author hr {
+  margin: 48px 100px 35px 100px;
+}
+body footer .author p {
+  width: 230px;
+  height: 24px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 102.01px;
+  margin-bottom: 38px;
+  line-height: 1.5;
+}

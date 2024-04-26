@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body header {
+  height: 100px;
+  background-color: #fff;
+  padding: 0 100px 0 54px;
+  display: flex;
+  align-items: center;
+}
+body header .logo {
+  display: flex;
+  align-items: center;
+}
+body header .logo h3 {
+  margin-left: 5px;
+  font-size: 34px;
+  font-weight: 700;
+}
+body header .menu {
+  display: flex;
+  align-items: center;
+  margin-left: 266px;
+  font-family: "Poppins";
+}
+body header .menu li {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 75px;
+  cursor: pointer;
+}
+body header .menu li:last-child {
+  margin-right: 0;
+}
+body header .menu li a {
+  text-decoration: none;
+}
+body header .menu li a:hover {
+  color: #ff6c44;
+}
+body header .icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+body header .icons li {
+  margin-right: 45px;
+  cursor: pointer;
+}
+body header .icons li:last-child {
+  margin-right: 0;
+}
+body .banner {
+  width: 1440px;
+  height: 316px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assest/Rectangle 1.png");
+  background-repeat: no-repeat;
+}
+body .banner .logo img {
+  margin-left: 213px;
+  width: 77px;
+  height: 77px;
+}
+body .banner h1 {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+}
+body .banner h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+body .banner .menu {
+  display: flex;
+  margin-left: 191px;
+}
+body .banner .menu i {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+body .banner .menu a {
+  text-decoration: none;
+}
+body .banner .menu a:hover {
+  color: #ff6c44;
+}

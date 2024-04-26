@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  header {
+    height: 100px;
+    background-color: #fff;
+    padding: 0 100px 0 54px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      h3 {
+        margin-left: 5px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      margin-left: 266px;
+      font-family: 'Poppins';
+      li {
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 75px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          text-decoration: none;
+          // & = a
+          &:hover {
+            color: #ff6c44;
+          }
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      li {
+        margin-right: 45px;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .banner {
+    width: 1440px;
+    height: 316px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assest/Rectangle 1.png');
+    background-repeat: no-repeat;
+    .logo {
+      img {
+        margin-left: 213px;
+        width: 77px;
+        height: 77px;
+      }
+    }
+    h1 {
+      text-align: center;
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    h1 {
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .menu {
+      display: flex;
+      margin-left: 191px;
+      i {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          color: #ff6c44;
+        }
+      }
+    }
+  }
+}
