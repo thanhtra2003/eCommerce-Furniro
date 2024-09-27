@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO LIST</title>
+  <style>
+    body {
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    .formwork {
+      text-align: center;
+      width: 50%;
+      background-color: bisque;
+      border-radius: 10px;
+      margin: auto;
+      padding: 20px;
+      min-height: 400px;
+    }
+    h2 {
+      margin: 0;
+      font-weight: bold;
+      font-size: xx-large;
+    }
+    .add {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .add input {
+      padding: 10px;
+      width: 60%;
+    }
+    .add button {
+      padding: 10px 20px;
+      margin-left: 10px;
+    }
+    .btn_filter {
+      margin-bottom: 20px;
+    }
+    .btn_filter button {
+      padding: 10px;
+      margin: 0 5px;
+    }
+    .todo-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+    .todo-item.completed label {
+      text-decoration: line-through;
+      font-style: italic;
+      color: grey;
+    }
+  </style>
+</head>
+<body>
+  <div class="formwork">
+    <h2>TODO LIST</h2>
+    <div class="add">
+      <input type="text" id="textinput" placeholder="Nhập công việc" />
+      <button id="btn_add">Thêm</button>
+    </div>
+    <div class="btn_filter">
+      <button id="all">All</button>
+      <button id="unfinished">Chưa hoàn thành</button>
+      <button id="finish">Đã hoàn thành</button>
+    </div>
+    <div class="container"></div>
+  </div>
+  <script src="./styles/js/bai21.js"></script>
+</body>
+</html>

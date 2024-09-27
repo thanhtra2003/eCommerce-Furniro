@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Post</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+
+      .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      input[type='text'] {
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: #060606;
+        color: white;
+        text-align: center;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #ff5a5a;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .card {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-container">
+      <input type="text" id="postId" placeholder="input search id" />
+      <button onclick="getData()">Search</button>
+    </div>
+
+    <h1>Blog Cards</h1>
+
+    <div id="postContainer"></div>
+
+    <script>
+      const inputsearch = document.getElementById('postId')
+      async function getData() {
+        const url = 'https://jsonplaceholder.typicode.com/posts/1'
+        const data = await fetch(url)
+        const posts = await data.json()
+        const postId = inputsearch.value
+        const filteredPost = posts.find(post => post.id == postId)
+        if (filteredPost) {
+          document.getElementById('postContainer').innerHTML = `
+      <div class="card">
+        <h3>${filteredPost.title}</h3>
+        <img src="https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/12/ai-la-nguoi-dam-me-nhung-bau-troi-dem-day-sao-dep-den-nao-long-nao.jpg"
+        <p>${filteredPost.body}</p>
+        <a href="#">Read More</a>
+      </div>
+    `
+        } else {
+          document.getElementById('postContainer').innerHTML = `<p>Không tìm thấy post</p>`
+        }
+      }
+    </script>
+  </body>
+</html>
